@@ -1,0 +1,31 @@
+spring:
+    application:
+        name: student-management
+    datasource:
+        url: "jdbc:mysql://localhost:3306/student_management"
+        driverClassName: "com.mysql.cj.jdbc.Driver"
+        username: root
+        password: 12345678
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+    data:
+        redis:
+            host: "localhost"
+            port: 6379
+            password: "AXfpAAIncDFlMjE4MjNiMGI0MGU0ZDJjOTFiNzhmMzQwNTVlYjQ1MXAxMzA2OTc"
+
+server:
+    port: 8080
+    servlet:
+        context-path: /student-management
+
+jwt:
+    signerKey: "uLzJCRYjCs2B2VScGODQsrTSl9CeWOp/sG5ZgVtzH6p9HGXKjmQxMoj9J4Makgiq"
+    valid-duration: 1200000
+    refreshable-duration: 3600000
+# redis:
+#     host: "worthy-cod-30697.upstash.io"
+#     port: 6379
+#     password: "AXfpAAIncDFlMjE4MjNiMGI0MGU0ZDJjOTFiNzhmMzQwNTVlYjQ1MXAxMzA2OTc"
